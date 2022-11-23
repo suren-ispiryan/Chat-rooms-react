@@ -1,38 +1,91 @@
+.row {
+  --bs-gutter-x: unset;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active a{
+  color: white !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
+.navbar-brand {
+  height: 40px;
+}
+
+/* ================ sign ================ */
+/* ====================================== */
+.component-sign {
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.sign-form-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  padding-left: 0 !important;
+}
+
+.sign-form {
+  box-shadow: 0 0 15px rgb(240, 240, 240);
+  border-radius: 5px;
+  padding: 25px 65px;
+  margin-top: 100px;
+  width: 400px;
+}
+
+.sign-inputs {
+  border: none;
+  border-bottom: 1px silver solid !important;
+  border-radius: 0%;
+}
+
+.sign-inputs:active, .sign-inputs:focus {
+  box-shadow: none;
+}
+
+.sign-text {
+  color: #3b3e43;
+  font-size: 10px;
+}
+
+/* =========== dashboard RoomMenu =========== */
+/* ========================================== */
+.rooms-menu-back {
+  background-color: rgb(47, 47, 57) !important;
+}
+
+/* =========== dashboard Navbar =========== */
+/* ======================================== */
+.navbar-back {
+  min-height: 100vh;
+  background-color: rgb(36, 37, 45) !important;
+}
+
+.left-side-navbar {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-control-buttons {
+  display: flex;
+  margin: 0;
+  font-size: 11px;
+  cursor: pointer;
+  color: rgb(111, 119, 138);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-logo-brand {
+  width: 100px;
 }
